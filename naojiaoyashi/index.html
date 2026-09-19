@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>挠脚丫视频 - 沉浸式足部按摩与互动放松指南</title>
+    <meta name="description" content="本站提供精选的挠脚丫视频资源与足部放松指南，涵盖足部按摩教学、互动放松内容及相关注意事项，帮助您缓解疲劳，获得身心舒适体验。">
+    <meta name="keywords" content="挠脚丫视频,足部按摩,足部放松,互动视频,足部护理">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #e67e22;
+            --primary-hover: #d35400;
+            --bg-color: #fdfbf7;
+            --card-bg: #ffffff;
+            --text-main: #2c3e50;
+            --text-secondary: #7f8c8d;
+            --border-color: #ecf0f1;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: var(--card-bg);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .btn-subscribe {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn-subscribe:hover {
+            background-color: var(--primary-hover);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffffff 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            border: 2px solid var(--border-color);
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+        }
+
+        /* 分类标签 */
+        .categories {
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .category-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .tag {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 1.2rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .tag:hover, .tag.active {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* 视频列表 */
+        .video-section {
+            padding: 2rem 0 4rem;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .thumbnail-container {
+            position: relative;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio */
+            background-color: #eee;
+        }
+
+        .thumbnail-container img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background-color: rgba(230, 126, 34, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .card-content {
+            padding: 1.2rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .video-meta {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tags-container {
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .mini-tag {
+            font-size: 0.75rem;
+            background-color: #f8f9fa;
+            color: var(--text-secondary);
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        /* 内容说明区 */
+        .info-section {
+            background-color: white;
+            padding: 4rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .info-content h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+        }
+
+        .info-content p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        .info-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        .info-list li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .info-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* FAQ */
+        .faq-section {
+            padding: 4rem 0;
+            background-color: var(--bg-color);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .faq-question {
+            padding: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            padding: 0 1.2rem 1.2rem;
+            color: var(--text-secondary);
+            display: none;
+            border-top: 1px solid #f1f1f1;
+            padding-top: 1rem;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question {
+            color: var(--primary-color);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* 移动端简化导航 */
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                    <line x1="4" y1="22" x2="4" y2="15"></line>
+                </svg>
+                足部舒缓空间
+            </div>
+            <nav class="nav-links">
+                <a href="#">首页</a>
+                <a href="#">热门推荐</a>
+                <a href="#">分类浏览</a>
+                <a href="#">放松技巧</a>
+                <a href="#">关于我们</a>
+            </nav>
+            <a href="#" class="btn-subscribe">会员中心</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>探索舒适的足部体验</h1>
+                <p>精选高质量的挠脚丫视频与专业足部按摩指南，帮助您在忙碌的生活中找到身心的放松时刻。</p>
+                <div class="search-box">
+                    <input type="text" placeholder="搜索感兴趣的内容...">
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section class="categories">
+            <div class="container">
+                <div class="category-tags">
+                    <span class="tag active">全部</span>
+                    <span class="tag">舒缓放松</span>
+                    <span class="tag">教学演示</span>
+                    <span class="tag">互动体验</span>
+                    <span class="tag">足部护理</span>
+                    <span class="tag">助眠音乐</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video List -->
+        <section class="video-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">热门精选视频</h2>
+                    <a href="#" style="color: var(--primary-color); font-weight: 500;">查看更多 &rarr;</a>
+                </div>
+                
+                <div class="video-grid">
+                    <!-- Video Card 1 -->
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/seed/foot1/600/338" alt="足部放松视频封面">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="video-title">15分钟深度足部按摩舒缓教程</h3>
+                            <div class="video-meta">
+                                <span>12.5万次播放</span>
+                                <span>2023-10-15</span>
+                            </div>
+                            <div class="tags-container">
+                                <span class="mini-tag">教学</span>
+                                <span class="mini-tag">按摩</span>
+                                <span class="mini-tag">舒缓</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Video Card 2 -->
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/seed/foot2/600/338" alt="放松助眠视频封面">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="video-title">沉浸式挠脚助眠与ASMR放松</h3>
+                            <div class="video-meta">
+                                <span>8.2万次播放</span>
+                                <span>2023-10-12</span>
+                            </div>
+                            <div class="tags-container">
+                                <span class="mini-tag">助眠</span>
+                                <span class="mini-tag">ASMR</span>
+                                <span class="mini-tag">放松</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Video Card 3 -->
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/seed/foot3/600/338" alt="足部护理视频封面">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="video-title">足底穴位按压与日常护理指南</h3>
+                            <div class="video-meta">
+                                <span>5.6万次播放</span>
+                                <span>2023-10-10</span>
+                            </div>
+                            <div class="tags-container">
+                                <span class="mini-tag">护理</span>
+                                <span class="mini-tag">穴位</span>
+                                <span class="mini-tag">健康</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Video Card 4 -->
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/seed/foot4/600/338" alt="互动体验视频封面">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="video-title">轻松一刻：趣味足部互动体验</h3>
+                            <div class="video-meta">
+                                <span>3.1万次播放</span>
+                                <span>2023-10-08</span>
+                            </div>
+                            <div class="tags-container">
+                                <span class="mini-tag">趣味</span>
+                                <span class="mini-tag">互动</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Video Card 5 -->
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/seed/foot5/600/338" alt="居家放松视频封面">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="video-title">居家足浴与足部放松全攻略</h3>
+                            <div class="video-meta">
+                                <span>9.8万次播放</span>
+                                <span>2023-10-05</span>
+                            </div>
+                            <div class="tags-container">
+                                <span class="mini-tag">居家</span>
+                                <span class="mini-tag">足浴</span>
+                                <span class="mini-tag">攻略</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Video Card 6 -->
+                    <article class="video-card">
+                        <div class="thumbnail-container">
+                            <img src="https://picsum.photos/seed/foot6/600/338" alt="运动恢复视频封面">
+                            <div class="play-icon">▶</div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="video-title">运动后足部肌肉放松视频</h3>
+                            <div class="video-meta">
+                                <span>4.4万次播放</span>
+                                <span>2023-10-01</span>
+                            </div>
+                            <div class="tags-container">
+                                <span class="mini-tag">运动</span>
+                                <span class="mini-tag">恢复</span>
+                                <span class="mini-tag">肌肉</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info & Guide Section -->
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-content">
+                        <h2>为什么关注足部健康与放松？</h2>
+                        <p>足部是人体的第二心脏，承载着我们全身的重量。长期站立、行走或缺乏运动都可能导致足部肌肉紧张、疲劳甚至疼痛。</p>
+                        <p>通过观看专业的挠脚丫视频或进行足部按摩，可以有效促进血液循环，缓解肌肉紧张，释放压力。本站提供的内容均经过筛选，旨在为您提供安全、舒适且具有教育意义的放松体验。</p>
+                        <h3 style="margin-top: 1.5rem; margin-bottom: 1rem;">适用人群</h3>
+                        <ul class="info-list">
+                            <li>长期久坐或久站的上班族</li>
+                            <li>喜爱足部护理与自我放松的爱好者</li>
+                            <li>寻找助眠方法的失眠人群</li>
+                            <li>关注健康生活方式的年轻群体</li>
+                        </ul>
+                    </div>
+                    <div class="info-image">
+                        <img src="https://picsum.photos/seed/relax/600/400" alt="足部放松示意图">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container faq-container">
+                <h2 class="section-title" style="text-align: center; border: none; margin-bottom: 2rem;">常见问题解答</h2>
+                
+                <div class="faq-item">
+                    <div class="faq-question">观看视频需要付费吗？</div>
+                    <div class="faq-answer">本站部分精选视频可免费观看，部分高级教学或高清互动内容可能需要会员订阅。请查看具体视频详情页。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">这些视频适合在睡前观看吗？</div>
+                    <div class="faq-answer">是的，许多我们的视频专为助眠设计，配合轻柔的音乐和舒缓的按摩手法，非常适合在睡前放松身心。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">如何正确进行足部自我按摩？</div>
+                    <div class="faq-answer">您可以参考我们“教学演示”分类中的视频。通常建议先热敷，然后使用拇指按压足底穴位，最后进行足部拉伸。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">内容是否适合未成年人观看？</div>
+                    <div class="faq-answer">本站所有内容均经过审核，确保健康、积极，适合所有年龄段的用户浏览。</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">关于我们</a>
+                <a href="#">服务条款</a>
+                <a href="#">隐私政策</a>
+                <a href="#">联系客服</a>
+                <a href="#">版权声明</a>
+            </div>
+            <p class="copyright">&copy; 2023 足部舒缓空间. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的 FAQ 切换交互
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+
+        // 简单的分类标签交互
+        document.querySelectorAll('.tag').forEach(tag => {
+            tag.addEventListener('click', event => {
+                document.querySelectorAll('.tag').forEach(t => t.classList.remove('active'));
+                event.target.classList.add('active');
+            });
+        });
+    </script>
+</body>
+  </html>
