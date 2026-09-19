@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="qovd美女 - 汇聚全球精选高清美女性感写真与时尚摄影作品，提供专业摄影视角与艺术鉴赏，致力于打造高质量视觉美学平台。">
+    <meta name="keywords" content="qovd美女,高清美图,摄影艺术,时尚写真,视觉美学">
+    <title>qovd美女-高清美图摄影与视觉美学鉴赏平台</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #0f0f12;
+            --card-bg: #1a1a1f;
+            --text-main: #ffffff;
+            --text-sub: #a0a0a5;
+            --accent: #d4af37;
+            --accent-hover: #f9ce46;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+            --radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* 头部导航 */
+        header {
+            background-color: rgba(15, 15, 18, 0.95);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            color: var(--text-sub);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--accent);
+        }
+
+        .search-box {
+            position: relative;
+        }
+
+        .search-box input {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 20px;
+            color: var(--text-main);
+            width: 200px;
+            transition: var(--transition);
+        }
+
+        .search-box input:focus {
+            width: 240px;
+            border-color: var(--accent);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            position: relative;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(15, 15, 18, 0.9), rgba(15, 15, 18, 0.4)), url('https://picsum.photos/seed/hero1/1920/1080') no-repeat center center/cover;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .hero-tag {
+            background-color: var(--accent);
+            color: #000;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .hero p {
+            color: var(--text-sub);
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 32px;
+            background-color: var(--accent);
+            color: #000;
+            font-weight: 600;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+        }
+
+        /* 分类导航 */
+        .category-nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+
+        .cat-item {
+            background-color: var(--card-bg);
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 14px;
+            color: var(--text-sub);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: var(--transition);
+        }
+
+        .cat-item:hover, .cat-item.active {
+            background-color: rgba(212, 175, 55, 0.1);
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        /* 画廊网格 */
+        .gallery-section {
+            margin-bottom: 60px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 30px;
+            border-left: 4px solid var(--accent);
+            padding-left: 16px;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+        }
+
+        .section-header p {
+            color: var(--text-sub);
+            font-size: 14px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: var(--radius);
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            group: card;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 380px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-image img {
+            transform: scale(1.05);
+        }
+
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            opacity: 0;
+            transition: var(--transition);
+            display: flex;
+            align-items: flex-end;
+            padding: 20px;
+        }
+
+        .card:hover .card-overlay {
+            opacity: 1;
+        }
+
+        .card-info {
+            padding: 16px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+
+        .like-btn {
+            background: none;
+            border: none;
+            color: rgba(255,255,255,0.7);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .like-btn:hover {
+            color: #ff4757;
+        }
+
+        /* 特写展示区 */
+        .feature-section {
+            background-color: #15151a;
+            padding: 80px 0;
+            margin-bottom: 60px;
+        }
+
+        .feature-layout {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .feature-image {
+            flex: 1;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .feature-image img {
+            width: 100%;
+            display: block;
+        }
+
+        .feature-content {
+            flex: 1;
+        }
+
+        .feature-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .feature-content p {
+            color: var(--text-sub);
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0c;
+            padding: 60px 0 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: var(--text-sub);
+            margin-top: 16px;
+            font-size: 14px;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            color: var(--text-main);
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-sub);
+            font-size: 14px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero {
+                height: 400px;
+                text-align: center;
+            }
+            .hero-content {
+                margin: 0 auto;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .feature-layout {
+                flex-direction: column;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .footer-brand p {
+                margin: 16px auto;
+            }
+            .search-box input {
+                width: 120px;
+            }
+            .search-box input:focus {
+                width: 140px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-inner">
+            <a href="#" class="logo">qovd<span>美女</span></a>
+            <nav class="nav-links">
+                <a href="#" class="active">首页</a>
+                <a href="#">时尚写真</a>
+                <a href="#">摄影艺术</a>
+                <a href="#">高清美图</a>
+                <a href="#">专题合集</a>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索关键词...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <span class="hero-tag">每日精选</span>
+                <h1>探索视觉之美，捕捉光影瞬间</h1>
+                <p>汇聚全球顶尖摄影师与模特作品，为您提供高清、细腻、充满艺术感的视觉盛宴。在这里，每一张照片都是故事的开端。</p>
+                <button class="btn">立即浏览</button>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Category Filter -->
+            <div class="category-nav">
+                <a href="#" class="cat-item active">全部</a>
+                <a href="#" class="cat-item">时尚街拍</a>
+                <a href="#" class="cat-item">人像摄影</a>
+                <a href="#" class="cat-item">黑白艺术</a>
+                <a href="#" class="cat-item">复古风格</a>
+                <a href="#" class="cat-item">极简主义</a>
+            </div>
+
+            <!-- Latest Gallery -->
+            <section class="gallery-section">
+                <div class="section-header">
+                    <div>
+                        <h2>最新收录</h2>
+                        <p>每日更新，精选全球高质量美图</p>
+                    </div>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Card 1 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/fashion1/400/600" alt="时尚街拍美图">
+                            <div class="card-overlay">
+                                <button class="like-btn">♥ 1.2k</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">都市霓虹下的时尚漫步</h3>
+                            <div class="card-meta">
+                                <span>摄影师: Alex</span>
+                                <span>2023-10-24</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/portrait2/400/600" alt="人像摄影作品">
+                            <div class="card-overlay">
+                                <button class="like-btn">♥ 856</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">静谧午后的人像特写</h3>
+                            <div class="card-meta">
+                                <span>摄影师: Sarah</span>
+                                <span>2023-10-23</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/art3/400/600" alt="黑白艺术摄影">
+                            <div class="card-overlay">
+                                <button class="like-btn">♥ 2.3k</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">黑白光影的极致表达</h3>
+                            <div class="card-meta">
+                                <span>摄影师: Chen</span>
+                                <span>2023-10-22</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4 -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/vintage4/400/600" alt="复古风格美图">
+                            <div class="card-overlay">
+                                <button class="like-btn">♥ 980</button>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">80年代复古风情</h3>
+                            <div class="card-meta">
+                                <span>摄影师: RetroLab</span>
+                                <span>2023-10-21</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Feature Section -->
+            <section class="feature-section">
+                <div class="container feature-layout">
+                    <div class="feature-image">
+                        <img src="https://picsum.photos/seed/feature/800/500" alt="摄影艺术展示">
+                    </div>
+                    <div class="feature-content">
+                        <h2>光影的艺术：qovd美女摄影理念</h2>
+                        <p>在qovd美女平台上，我们不仅展示图片，更致力于传递摄影背后的美学理念。每一组作品都经过精心策划，从模特的妆造、场景的选择到灯光的运用，每一个细节都追求极致的完美。</p>
+                        <ul class="feature-list">
+                            <li>高清画质，细节毕现</li>
+                            <li>多元化风格，满足不同审美需求</li>
+                            <li>专业后期调色，提升视觉冲击力</li>
+                            <li>尊重版权，支持原创作者</li>
+                        </ul>
+                        <button class="btn" style="background: transparent; border: 1px solid var(--accent); color: var(--accent);">了解更多</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Trending Section -->
+            <section class="gallery-section">
+                <div class="section-header">
+                    <div>
+                        <h2>热门榜单</h2>
+                        <p>最受用户喜爱的qovd美女精选</p>
+                    </div>
+                </div>
+                <div class="gallery-grid">
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/trend1/400/600" alt="热门美图">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">夏日海滩写真集</h3>
+                            <div class="card-meta">
+                                <span>热度: 5.4w</span>
+                                <span>分类: 海外</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/trend2/400/600" alt="热门美图">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">极简主义家居人像</h3>
+                            <div class="card-meta">
+                                <span>热度: 3.1w</span>
+                                <span>分类: 极简</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/trend3/400/600" alt="热门美图">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">街头潮流穿搭指南</h3>
+                            <div class="card-meta">
+                                <span>热度: 2.8w</span>
+                                <span>分类: 街拍</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://picsum.photos/seed/trend4/400/600" alt="热门美图">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">自然光下的清新感</h3>
+                            <div class="card-meta">
+                                <span>热度: 2.5w</span>
+                                <span>分类: 人像</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">qovd<span>美女</span></a>
+                    <p>致力于为全球用户提供最优质的视觉内容，探索美、记录美、分享美。我们专注于摄影艺术与时尚美学的完美结合。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>探索</h4>
+                    <ul>
+                        <li><a href="#">最新收录</a></li>
+                        <li><a href="#">热门榜单</a></li>
+                        <li><a href="#">摄影师专区</a></li>
+                        <li><a href="#">专题合集</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">投稿指南</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">联系合作</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="#">帮助中心</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 qovd美女视觉美学平台. All Rights Reserved. 本站内容仅供欣赏，请勿用于商业用途。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
